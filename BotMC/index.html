@@ -38,7 +38,7 @@
         </nav>
         <div class="d-flex-column" id="content-wrapper">
             <div class="jumbotron text-center swing animated mb-4 "">
-              <h1 id="Welcomer">
+              <h1 id=" Welcomer">
                 </h1>
                 <hr class="wel">
                 <h4>Welcome to MoonL Bots</h4>
@@ -46,13 +46,26 @@
             <div>
                 <br>
                 <div class="jumbotron text-center swing animated mb-4">
-                    <h1>About Bot</h1>
-                    <hr>
-                    <p>Normal Bot, One of bot that i create in a video</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tsTNTzwKW-k"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>About Bot</h1>
+                            <hr>
+                            <p>Normal Bot, One of bot that i create in a video</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/tsTNTzwKW-k"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1>How To SelfHost</h1>
+                            <hr>video
+                            <p>Normal Bot, One of bot that i create in a </p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TeHJJrHpZ2Y"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
                 <div class="jumbotron text-center swing animated mb-4">
                     <h1>SelfHost</h1>
@@ -62,9 +75,11 @@
                     <br>
                     <ul class="text-left" style="position: relative; left:20%; font-size:20px">
                         <li>1.Open A Command Promt and locate it to folder where your bot want to installed on</li>
-                        <li>2.Now, Type : "git clone https://github.com/MoonLGH/NormalMineflayerBot.git" In The Command Prompt</li>
+                        <li>2.Now, Type : "git clone https://github.com/MoonLGH/NormalMineflayerBot.git" In The Command
+                            Prompt</li>
                         <li>3.Now Move Command prompt to the new Directory, Then Type "npm i" in your command promt</li>
-                        <li>4.After npm installation done, <a style="font-weight: bold;" href="#config">Setting Your Bot</a></li>
+                        <li>4.After npm installation done, <a style="font-weight: bold;" href="#config">Setting Your
+                                Bot</a></li>
                         <li>5.After Done, Copy Json and paste it into your empty config.json</li>
                         <li>6.All settings are done, now you can run the bot by typing, "node ." in the command promt
                         </li>
@@ -75,7 +90,7 @@
                     <h1>Bot Configuration</h1>
                     <hr>
                     <br>
-                    <div id="config" onchange="genout()"style="width: 50%; position: relative; left: 25%;">
+                    <div id="config" onchange="genout()" style="width: 50%; position: relative; left: 25%;">
                         <input type="text" id="DToken" class="form-control" placeholder="Your Discord Bot Token">
                         <br>
                         <input type="text" id="Dprefix" class="form-control" placeholder="Your Discord Bot Prefix">
@@ -83,10 +98,12 @@
                         <h3>Check the box if your minecraft account is premium</h3>
                         <input onchange="pw(this.checked)" type="checkbox" style="zoom: 1.5;" id="McType">
                         <br>
-                        <input type="text" id="McEmail" class="form-control" placeholder="Your Minecraft Account Email/Nickname">
+                        <input type="text" id="McEmail" class="form-control"
+                            placeholder="Your Minecraft Account Email/Nickname">
                         <br>
-                        <input type="text" id="McPass" disabled="true" class="form-control" placeholder="CRACKED" value="false">
-                        
+                        <input type="text" id="McPass" disabled="true" class="form-control" placeholder="CRACKED"
+                            value="false">
+
                         <br>
                         <input type="text" id="McServerIP" class="form-control" placeholder="Your Minecraft Server IP">
                         <br>
@@ -113,11 +130,13 @@
                     <textarea name="OUTPUT" id="OUT" cols="50" rows="5"></textarea>
                     <br>
                     <button onclick="copy()">Copy</button>
-                    <script>function copy() {
-                        let textarea = document.getElementById("OUT");
-                        textarea.select();
-                        document.execCommand("copy");
-                      }</script>
+                    <script>
+                        function copy() {
+                            let textarea = document.getElementById("OUT");
+                            textarea.select();
+                            document.execCommand("copy");
+                        }
+                    </script>
                 </div>
             </div>
         </div>
