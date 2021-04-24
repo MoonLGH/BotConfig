@@ -27,9 +27,9 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" style="position: relative; top: 10px" id="accordionSidebar">
-                    <li class="nav-item" role="presentation"><a class="active nav-link" href="./index.html"><img
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="./index.html"><img
                                 src="assets/img/Mc.png" width="64px"><span>Normal Bot</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="../Uni1/index.html"><img
+                    <li class="nav-item" role="presentation"><a class="active nav-link" href="../Uni1/index.html"><img
                                 src="assets/img/Mc.png" width="64px"><span>Unique Bot 1 </span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline " style="position: relative; top: 25px"><button
@@ -54,7 +54,45 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-<h1>NOT DONE YET</h1>
+                <div class="jumbotron text-center swing animated mb-4">
+                    <h1>SelfHost</h1>
+                    <h2>How To Install</h2>
+                    <hr>
+                    <h3 style="color: red;">Make Sure You Have Node And Git Installed Already!</h3>
+                    <br>
+                    <ul class="text-left" style="position: relative; left:20%; font-size:20px">
+                        <li>1.Open A Command Promt and locate it to folder where your bot want to installed on</li>
+                        <li>2.Now, Type : "git clone https://github.com/MoonLGH/Unique-Bot-1.git" In The Command Prompt</li>
+                        <li>3.Now Move Command prompt to the new Directory, Then Type "npm i" in your command promt</li>
+                        <li>4.After npm installation done, <a style="font-weight: bold;" href="#config">Setting Your Bot</a></li>
+                        <li>5.After Done, Copy Json and paste it into your empty config.json</li>
+                        <li>6.All settings are done, now you can run the bot by typing, "node ." in the command promt
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="jumbotron text-center swing animated mb-4">
+                    <h1>Bot Configuration</h1>
+                    <hr>
+                    <br>
+                    <div id="config" onchange="genout()"style="width: 50%; position: relative; left: 25%;">
+                        <input type="text" id="DToken" class="form-control" placeholder="Your Discord Bot Token">
+                        <br>
+                        <input type="text" id="Dprefix" class="form-control" placeholder="Your Discord Bot Prefix">
+                        <br>
+                        <input type="text" id="CHIDSC" class="form-control" placeholder="Channel ID For Server Chat">
+                    </div>
+                    <br>
+                    <h1>OUTPUT JSON</h1>
+                    <textarea name="OUTPUT" id="OUT" cols="50" rows="5"></textarea>
+                    <br>
+                    <button onclick="copy()">Copy</button>
+                    <script>function copy() {
+                        let textarea = document.getElementById("OUT");
+                        textarea.select();
+                        document.execCommand("copy");
+                      }</script>
+                </div>
             </div>
         </div>
     </div>
